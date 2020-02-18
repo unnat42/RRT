@@ -88,7 +88,7 @@ for _ in range(n):
     rand_y = random.randrange(0,100)
     # print(rand_x,rand_y)
     # rand_point.append([rand_x,rand_y])
-    angle = math.atan2((rand_y-current_node[1]), (rand_x-current_node[0]))#Maybe wrong
+    angle = math.atan2((rand_y-current_node[1]), (rand_x-current_node[0]))
     new_node = [current_node[0]+(unit_step*np.cos(angle)), current_node[1]+(unit_step*np.sin(angle))]
     d = math.sqrt((new_node[0]-goal_node[0])**2 + (new_node[1]-goal_node[1])**2)
     
